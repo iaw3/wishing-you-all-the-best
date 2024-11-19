@@ -46,8 +46,6 @@ app.post('/message', async (req, res) => {
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'w1sh1ng.u.4ll.the.b3st@gmail.com',  
-    pass: 'vejo dvan hmki cdtr',  
   },
 });
 
@@ -75,7 +73,6 @@ app.post('/email', (req, res) => {
 })
 
 // OgLrN8fD9QHSeYCo
-const uri = "mongodb+srv://Irene:OgLrN8fD9QHSeYCo@cluster0.63des.mongodb.net/seniorstudio?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log('MongoDB connected successfully via Mongoose'))
 .catch(err => {
